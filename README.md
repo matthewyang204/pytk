@@ -1,2 +1,2 @@
-# pytk
-A Python package to bootstrap Tkinter onto existing installations that were not compiled with Tkinter support (haha)
+# Python Tkinter Bootstrap
+This package can bootstrap Tkinter onto existing Python installations that were not compiled with it (haha). It works on the basis that Tkinter is simply a C ABI/C extension module that can be externally installed at will like plenty others, including, for example, `numpy`, `scipy`, etc. I found inspiration in the Homebrew Formula, which does this and serves as a great example.
