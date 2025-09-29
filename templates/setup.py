@@ -1,5 +1,13 @@
 from setuptools import setup, Extension
 
+try:
+      import tkinter
+
+      print("Tkinter is already installed, no need to install")
+      exit(1)
+except ImportError:
+      pass
+
 setup(name="tkinter",
       description="Python interface to Tcl/Tk",
       version="1.0.0",
