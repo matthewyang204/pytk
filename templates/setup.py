@@ -1,4 +1,9 @@
 from setuptools import setup, Extension
+import platform
+
+if platform.system() == "Windows":
+      print("Windows Python installs already include tkinter, no need to install")
+      exit(1)
 
 try:
       import tkinter
