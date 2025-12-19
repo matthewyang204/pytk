@@ -11,7 +11,7 @@ try:
       print("Tkinter is already installed, no need to install")
       exit(1)
 except ImportError:
-      pass
+      print("Tkinter not already installed, installing...")
 
 setup(name="tkinter",
       description="Python interface to Tcl/Tk",
@@ -24,3 +24,5 @@ setup(name="tkinter",
                   library_dirs=["/usr", "/usr/local", "/opt/tcl-tk"])
       ]
 )
+
+print("done")
